@@ -1,0 +1,5 @@
+{
+  "name": "GistFM",
+  "description": "Turn your news articles into personalized audio summaries for your daily commute using Gemini 2.5 Flash and TTS.",
+  "requestFramePermissions": []
+}
