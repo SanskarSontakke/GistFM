@@ -1,20 +1,60 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# GistFM
 
-# Run and deploy your AI Studio app
+GistFM is a web application that transforms written news articles and text into podcast-style audio summaries. Leveraging Google's Gemini 2.5 Flash models for both text summarization and text-to-speech synthesis, it provides users with a convenient way to consume content on the go.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1rObPp0Y7GZdQfpWqxheNu4_ivNoDgOIj
+- **Article to Audio:** Convert text or URL-based articles into spoken audio.
+- **Customizable Experience:** Choose from multiple voices (Kore, Puck, Charon, Fenrir, Zephyr, Aoede) and tones (Professional, Casual, Witty, Brief).
+- **Smart Summarization:** Uses AI to draft scripts suitable for audio delivery.
+- **Bookmarks:** Save generated summaries to listen to later.
+- **Dark/Light Mode:** Responsive UI with theme support.
+- **Preview:** Read the generated script while listening to the audio.
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend:** React (Vite), TypeScript, Tailwind CSS
+- **AI Models:** Google Gemini 2.5 Flash (Text & TTS)
+- **Icons:** Lucide React
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js installed on your machine.
+
+### Installation
+
+1. Clone the repository (if applicable) or download the source code.
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Configuration
+
+1. Create a `.env.local` file in the root directory.
+2. Add your Google Gemini API key:
+
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+### Run Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`.
+
+## Usage
+
+1. **Input Content:** Paste the full text of an article or enter a valid URL.
+2. **Customize:** Select your preferred Voice (e.g., Fenrir, Kore) and Tone (e.g., Professional, Casual).
+3. **Generate:** Click "Generate Audio". The app will draft a script and synthesize the audio.
+4. **Listen:** Use the audio player to listen to your summary.
+5. **Bookmark:** Save interesting summaries to your bookmarks list for later access.
